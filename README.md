@@ -3,15 +3,19 @@
 Esta aplicação é voltada para a criação de organizações, onde cada organização pode ter vários membros e cada membro pode ter uma função dentro da organização. Os membros poderão se elogiar uns aos outros. Facilitando a comunicação e o gerenciamento de seus superiores.
 
 
+## Documentação da APi
+
+[Documentação da API](http://localhost:3333/docs)
+
 
 ## Funcionalidades
 
 ### Autenticação
 
-- [ ] Deve ser capaz de autenticar usando e-mail e senha;
-- [ ] Deve ser capaz de autenticar usando conta do Github;
+- [X] Deve ser capaz de autenticar usando e-mail e senha;
+- [ ] Deve ser capaz de autenticar usando conta do Google;
 - [ ] Deve ser capaz de recuperar senha usando e-mail;
-- [ ] Deve ser capaz de criar uma conta (e-mail, nome e senha);
+- [X] Deve ser capaz de criar uma conta (e-mail, nome e senha);
 
 ### Organizações
 
@@ -30,7 +34,8 @@ Esta aplicação é voltada para a criação de organizações, onde cada organi
 ### Membros
 
 - [ ] Deve ser capaz de obter membros da organização;
-- [ ] Deve ser capaz de atualizar a função de um membro;
+- [X] Deve ser capaz de obter o perfil do usuário;
+- [X] Deve ser capaz de atualizar o perfil do usuário;
 
 ### Elogios
 
@@ -44,6 +49,15 @@ Esta aplicação é voltada para a criação de organizações, onde cada organi
 - Proprietário (conta como administrador)
 - Administrador
 - Membro
+
+## Tecnologias utilizadas
+
+- Node.js
+- Turborepo
+- Prisma
+- Typescript
+- Fastify
+- Swagger
 
 
 ### Tabela de Permissões
