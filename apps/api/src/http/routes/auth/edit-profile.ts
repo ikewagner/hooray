@@ -14,7 +14,7 @@ export async function editProfile(app: FastifyInstance) {
       '/edit-profile',
       {
         schema: {
-          tags: ['Auth'],
+          tags: ['Autenticação'],
           security: [{ bearerAuth: [] }],
           summary: 'Editar o perfil do usuário',
           body: z.object({

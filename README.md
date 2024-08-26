@@ -19,8 +19,7 @@ Esta aplicação é voltada para a criação de organizações, onde cada organi
 
 ### Organizações
 
-- [ ] Deve ser capaz de criar uma nova organização;
-- [ ] Deve ser capaz de obter organizações às quais o usuário pertence;
+- [X] Deve ser capaz de criar uma nova organização;
 - [ ] Deve ser capaz de atualizar uma organização;
 - [ ] Deve ser capaz de encerrar uma organização;
 - [ ] Deve ser capaz de transferir a propriedade da organização;
@@ -33,7 +32,7 @@ Esta aplicação é voltada para a criação de organizações, onde cada organi
 
 ### Membros
 
-- [ ] Deve ser capaz de obter membros da organização;
+- [X] Deve ser capaz de obter membros da organização;
 - [X] Deve ser capaz de obter o perfil do usuário;
 - [X] Deve ser capaz de atualizar o perfil do usuário;
 
