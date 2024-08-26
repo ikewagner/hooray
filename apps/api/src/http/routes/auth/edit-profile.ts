@@ -3,6 +3,7 @@ import type { ZodTypeProvider } from 'fastify-type-provider-zod'
 import { z } from 'zod'
 
 import { prisma } from '../../../lib/prisma'
+import { BadRequestError } from '../_errors/bad-request-error'
 
 export async function editProfile(app: FastifyInstance) {
   app.withTypeProvider<ZodTypeProvider>().post(
@@ -32,7 +33,7 @@ export async function editProfile(app: FastifyInstance) {
       })
 
       if (!updatedUser) {
-        throw new Error('Usuário não encontrado')
+        throw new BadRequestError('Usuário não encontrado.')
       }
 
       return reply.send({ user: updatedUser })
