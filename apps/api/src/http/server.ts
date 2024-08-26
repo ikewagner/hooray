@@ -17,6 +17,9 @@ import { authenticateWithPassword } from './routes/auth/authenticate-with-passwo
 import { createAccount } from './routes/auth/create-account'
 import { editProfile } from './routes/auth/edit-profile'
 import { getProfile } from './routes/auth/get-profile'
+import { createOrganization } from './routes/orgs/create-organization'
+import { getMembership } from './routes/orgs/get-membership'
+import { getOrganization } from './routes/orgs/get-organization'
 const app = fastify().withTypeProvider<ZodTypeProvider>()
 
 app.setSerializerCompiler(serializerCompiler)
@@ -58,7 +61,10 @@ app.register(createAccount)
 app.register(authenticateWithPassword)
 app.register(getProfile)
 app.register(editProfile)
+app.register(createOrganization)
+app.register(getMembership)
+app.register(getOrganization)
 
 app.listen({ port: env.SERVER_PORT }).then(() => {
-  console.log(`Backend is running on port ${env.SERVER_PORT}!`)
+  console.log(`Backend está rodando na porta ${env.SERVER_PORT}!`)
 })
