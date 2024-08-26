@@ -18,7 +18,7 @@ export const permissions: Record<Role, PermissionsByRole> = {
       ownerId: { $eq: user.id },
     })
   },
-  MEMBER(_, { can }) {
+  MEMBER(user, { can }) {
     can('get', 'User')
   },
 }

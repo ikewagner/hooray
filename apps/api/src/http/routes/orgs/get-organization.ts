@@ -12,7 +12,7 @@ export async function getOrganization(app: FastifyInstance) {
       '/organization/:slug',
       {
         schema: {
-          tags: ['Organizações'],
+          tags: ['Organização'],
           summary: 'Obtenha detalhes da organização',
           security: [{ bearerAuth: [] }],
           params: z.object({

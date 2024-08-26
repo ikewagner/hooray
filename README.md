@@ -1,28 +1,25 @@
-# Aplicação Hooray
+# Backend da Hooray 
 
 Esta aplicação é voltada para a criação de organizações, onde cada organização pode ter vários membros e cada membro pode ter uma função dentro da organização. Os membros poderão se elogiar uns aos outros. Facilitando a comunicação e o gerenciamento de seus superiores.
-
 
 ## Documentação da APi
 
 [Documentação da API](http://localhost:3333/docs)
-
 
 ## Funcionalidades
 
 ### Autenticação
 
 - [X] Deve ser capaz de autenticar usando e-mail e senha;
-- [ ] Deve ser capaz de autenticar usando conta do Google;
 - [ ] Deve ser capaz de recuperar senha usando e-mail;
 - [X] Deve ser capaz de criar uma conta (e-mail, nome e senha);
 
 ### Organizações
 
 - [X] Deve ser capaz de criar uma nova organização;
-- [ ] Deve ser capaz de atualizar uma organização;
-- [ ] Deve ser capaz de encerrar uma organização;
-- [ ] Deve ser capaz de transferir a propriedade da organização;
+- [X] Deve ser capaz de atualizar uma organização;
+- [X] Deve ser capaz de encerrar uma organização;
+- [X] Deve ser capaz de transferir a propriedade da organização;
 
 ### Convites
 
