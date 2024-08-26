@@ -35,9 +35,11 @@ Esta aplicação é voltada para a criação de organizações, onde cada organi
 
 ### Elogios
 
-- [ ] Deve ser capaz de elogiar um membro;
+- [X] Deve ser capaz de elogiar um membro;
 - [ ] Deve ser capaz de obter elogios de um membro;
 - [ ] Deve ser capaz de obter elogios recebidos por um membro;
+- [ ] Deve ser capaz de deletar um elogio criado;
+- [ ] Deve ser capaz de atualizar um elogio criado; 
 
 
 ### Funções

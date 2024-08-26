@@ -17,6 +17,7 @@ import { authenticateWithPassword } from './routes/auth/authenticate-with-passwo
 import { createAccount } from './routes/auth/create-account'
 import { editProfile } from './routes/auth/edit-profile'
 import { getProfile } from './routes/auth/get-profile'
+import { createCompliment } from './routes/compliment/create-compliment'
 import { createOrganization } from './routes/orgs/create-organization'
 import { getMembership } from './routes/orgs/get-membership'
 import { getOrganization } from './routes/orgs/get-organization'
@@ -70,6 +71,7 @@ app.register(getOrganization)
 app.register(updateOrganization)
 app.register(shutdownOrganization)
 app.register(transferOrganization)
+app.register(createCompliment)
 
 app.listen({ port: env.SERVER_PORT }).then(() => {
   console.log(`Backend está rodando na porta ${env.SERVER_PORT}!`)
