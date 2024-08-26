@@ -1,9 +1,11 @@
 {
-  "name": "@saas/api",
+  "name": "@hooray/api",
   "version": "1.0.0",
   "scripts": {
-    "dev": "tsx watch src/http/server.ts",
-    "studio": "prisma studio"
+    "dev": "pnpm env:load tsx watch src/http/server.ts",
+    "db:migrate": "pnpm env:load prisma migrate dev",
+    "db:studio": "pnpm env:load prisma studio",
+    "env:load": "dotenv -e ../../.env --"
   },
   "dependencies": {
     "@faker-js/faker": "^8.4.1",
@@ -11,31 +13,34 @@
     "@fastify/jwt": "^8.0.1",
     "@fastify/swagger": "^8.15.0",
     "@fastify/swagger-ui": "^4.1.0",
+    "@hooray/auth": "workspace:*",
+    "@hooray/env": "workspace:*",
     "@prisma/client": "^5.18.0",
-    "@saas/auth": "workspace:*",
     "@types/bcryptjs": "^2.4.6",
     "bcryptjs": "^2.4.3",
     "date-fns": "^3.6.0",
     "dotenv": "^16.4.5",
+    "dotenv-cli": "^7.4.2",
     "fastify": "^4.28.1",
+    "fastify-plugin": "^4.5.1",
     "fastify-type-provider-zod": "^2.0.0",
     "prisma": "^5.18.0",
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@saas/eslint-config": "workspace:*",
-    "@saas/prettier": "workspace:*",
-    "@saas/tsconfig": "workspace:*",
+    "@hooray/eslint-config": "workspace:*",
+    "@hooray/prettier": "workspace:*",
+    "@hooray/tsconfig": "workspace:*",
     "@types/node": "^20.12.6",
     "tsx": "^4.7.2"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"
   },
-  "prettier": "@saas/prettier",
+  "prettier": "@hooray/prettier",
   "eslintConfig": {
     "extends": [
-      "@saas/eslint-config/node"
+      "@hooray/eslint-config/node"
     ]
   }
 }

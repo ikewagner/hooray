@@ -1,20 +1,20 @@
 {
-  "name": "@saas/auth",
+  "name": "@hooray/auth",
   "version": "0.0.0",
   "private": true,
   "main": "src/index.ts",
   "types": "src/index.ts",
   "devDependencies": {
-    "@saas/eslint-config": "workspace:*",
-    "@saas/prettier": "workspace:*",
-    "@saas/tsconfig": "workspace:*"
+    "@hooray/eslint-config": "workspace:*",
+    "@hooray/prettier": "workspace:*",
+    "@hooray/tsconfig": "workspace:*"
   },
   "eslintConfig": {
     "extends": [
-      "@saas/eslint-config/library"
+      "@hooray/eslint-config/library"
     ]
   },
-  "prettier": "@saas/prettier",
+  "prettier": "@hooray/prettier",
   "dependencies": {
     "@casl/ability": "^6.7.1",
     "zod": "^3.22.4"

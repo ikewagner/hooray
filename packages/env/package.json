@@ -1,0 +1,23 @@
+{
+  "name": "@hooray/env",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.ts",
+  "types": "index.ts",
+  "devDependencies": {
+    "@hooray/eslint-config": "workspace:*",
+    "@hooray/prettier": "workspace:*",
+    "@hooray/tsconfig": "workspace:*",
+    "@types/node": "^20.12.6"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@hooray/eslint-config/library"
+    ]
+  },
+  "prettier": "@hooray/prettier",
+  "dependencies": {
+    "@t3-oss/env-nextjs": "^0.9.2",
+    "zod": "^3.22.4"
+  }
+}
